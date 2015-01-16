@@ -93,12 +93,6 @@ int main(int argc, char **argv) {
 	char *endptr = 0;
 
 	if (argc == 1) { /*arg not given, set brightness to opposite extreme or highest*/
-	/*	printf("Usage: %s arg\n", argv[0]);
-		printf("Arguments:\n\t[1-10] - brightness levels, 10=brightest\
-								\n\t0,-1 - sight-damaging brightness levels\
-								\n\t-,+ - increment/decrement level");
-								*/
-		
 		int brightness = readBrightness();
 		if (brightness == BRIGHTNESS_HIGH) {
 			setBrightness(BRIGHTNESS_LOW);
